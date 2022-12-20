@@ -17,7 +17,7 @@ const extensions = [
   //".json"
 ];
 
-const name = "TypographyвPlainJS";
+const name = "TypographyPlainJS";
 
 // packages that should be treated as external dependencies, not bundled
 // e.g. ['axios']

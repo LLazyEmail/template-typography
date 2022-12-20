@@ -26,6 +26,6 @@ export {
     // imageComponent,
     // imgWrapper,
     // paragraphComponent,
-    // linkComponent,
+    linkComponent,
     // separatorComponent
 };
