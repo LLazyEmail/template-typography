@@ -22,7 +22,7 @@ const buttonComponent2 = (params) => {
 
   console.log(attributesStr);
 
-  return linkComponent({ content: params.text, attributes });
+  return linkComponent({ content: params.text, attributesStr });
 };
 
 // // we will probably loose id param during changes that Arthur is doing.

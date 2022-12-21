@@ -15,6 +15,11 @@ import linkComponent from './components/link';
 //     imgWrapper
 // } from './components/image';
 
+// import buttonComponent2 from '../src/components/button2';
+
+const config = {id: '12', href: 'google.com'};
+console.log(buttonComponent2(config))
+
 export { 
     buttonComponent, 
     buttonComponent2,
