@@ -1,5 +1,9 @@
 import { linkComponent, imgWrapper } from '../src/components/image';
 
+import buttonComponent2 from '../src/components/button2';
+
+const config = {id: '12', href: 'google.com'};
+
 const data = {
   id: 'imageBlock-26',
   href: 'https://www.nomoretogo.com/weekly-menu/',
@@ -22,13 +26,11 @@ describe('testing image with a link', () => {
 });
 
 
-const buttonComponent2 = require('../src/components/button2');
 
-const config = {id: '12', href: 'google.com'};
 
 describe('testing complex links', () => {
-  test('rendering head component', () => {
-    console.log(buttonComponent2);
+  test('rendering Button2 component', () => {
+    // console.log(buttonComponent2);
     console.log(buttonComponent2(config))
     //buttonComponent2({id: '12', href: 'google.com'});
     //         const string1 = printHead();
