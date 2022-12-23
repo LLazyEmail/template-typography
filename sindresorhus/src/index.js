@@ -1,6 +1,6 @@
 // import buttonComponent from './components/button';
 import buttonComponent2 from './components/button';
-import heading from './components/heading';
+import heading from './components/heading-nmtg';
 
 import linkComponent from './components/link';
 
