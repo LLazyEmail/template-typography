@@ -10,7 +10,7 @@ import stringifyAttributes from 'stringify-attributes';
 
 // import attributes from 'stringify-attributes';
 
-const buttonComponent2 = (params) => {
+const buttonComponent = (params) => {
   const attributes = {
     id: params.id,
     class: `mlContentButton`,
@@ -34,4 +34,4 @@ const buttonComponent2 = (params) => {
 //   </a>`;
 // };
 
-export default buttonComponent2;
+export default buttonComponent;

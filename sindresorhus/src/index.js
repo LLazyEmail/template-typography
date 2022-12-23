@@ -1,12 +1,13 @@
 // import buttonComponent from './components/button';
-import buttonComponent2 from './components/button2';
+import buttonComponent2 from './components/button';
 import heading from './components/heading';
+
+import linkComponent from './components/link';
 
 // import strong from './components/strong';
 // import { renderSubHeading, spanHeadingBlock } from './components/subheading';
 //--------
 // import paragraphComponent from './components/paragraph';
-import linkComponent from './components/link';
 
 // import separatorComponent from './components/separator';
 
