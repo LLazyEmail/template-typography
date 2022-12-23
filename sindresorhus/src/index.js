@@ -1,4 +1,4 @@
-import buttonComponent from './components/button';
+// import buttonComponent from './components/button';
 import buttonComponent2 from './components/button2';
 import heading from './components/heading';
 
@@ -21,7 +21,7 @@ const config = {id: '12', href: 'google.com'};
 console.log(buttonComponent2(config))
 
 export { 
-    buttonComponent, 
+    // buttonComponent, 
     buttonComponent2,
     heading,  
     // strong, 

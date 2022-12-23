@@ -12,6 +12,7 @@ import stringifyAttributes from 'stringify-attributes';
 
 const buttonComponent2 = (params) => {
   const attributes = {
+    id: params.id,
     class: `mlContentButton`,
     href: params.href,
     'data-link-id': params.id,
@@ -20,7 +21,7 @@ const buttonComponent2 = (params) => {
 
   const attributesStr = stringifyAttributes(attributes);
 
-  console.log(attributesStr);
+  // console.log(attributesStr);
 
   return linkComponent({ content: params.text, attributesStr });
 };
@@ -34,5 +35,3 @@ const buttonComponent2 = (params) => {
 // };
 
 export default buttonComponent2;
-
-// export default stringifyAttributes;
