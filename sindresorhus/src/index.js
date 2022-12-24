@@ -1,12 +1,17 @@
 // import buttonComponent from './components/button';
-import buttonComponent2 from './components/button';
+import buttonComponent from './components/button';
 import heading from './components/heading-nmtg';
 
 import linkComponent from './components/link';
 
+
+
+
 // import strong from './components/strong';
 // import { renderSubHeading, spanHeadingBlock } from './components/subheading';
 //--------
+
+
 // import paragraphComponent from './components/paragraph';
 
 // import separatorComponent from './components/separator';
@@ -19,12 +24,13 @@ import linkComponent from './components/link';
 // import buttonComponent2 from '../src/components/button2';
 
 const config = {id: '12', href: 'google.com'};
-console.log(buttonComponent2(config))
+console.log(buttonComponent(config))
 
 export { 
     // buttonComponent, 
-    buttonComponent2,
+    buttonComponent,
     heading,  
+    //-----
     // strong, 
     // renderSubHeading,
     // spanHeadingBlock,

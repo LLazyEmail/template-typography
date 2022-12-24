@@ -7,8 +7,50 @@
 // passing src, width, error handling, etc
 // plus to move it later between other templates
 
-
 import stringifyAttributes from 'stringify-attributes';
+
+const imageComponent = (params) => {
+
+  const attributes = {
+    src: params.src,
+    style: `display: block;`,
+    border:"0",
+    alt:"",
+    width: params.width, // TODO test if it can work withot width param or not
+  };
+
+
+  const attributesStr = stringifyAttributes(attributes);
+
+  // console.log(attributesStr);
+
+  return  `<img ${attributesStr} >`;
+
+};
+
+
+export default imageComponent;
+
+
+//------------------------------------------
+//------------------------------------------
+
+//   const { id, href, src, width } = params;
+
+//   const error = new Errors('image');
+
+//   if (id == '') {
+//     error.add('No id');
+//   }
+//   if (href == '') {
+//     error.add('No href');
+//   }
+//   if (src == '') {
+//     error.add('No src');
+//   }
+
+//------------------------------------------
+//------------------------------------------
 
 // import linkComponent from './link';
 
@@ -41,43 +83,3 @@ import stringifyAttributes from 'stringify-attributes';
 
 
   // return `<img src="${src}" border="0" alt="" width="${width}" style="display: block;">`;
-
-
-const imageComponent = (params) => {
-
-  const attributes = {
-    src: params.src,
-    style: `display: block;"`,
-    border:"0",
-    alt:"",
-    width: params.width, // TODO test if it can work withot width param or not
-  };
-
-
-  const attributesStr = stringifyAttributes(attributes);
-
-  // console.log(attributesStr);
-
-  return  `<img ${attributesStr} >`;
-
-};
-
-
-//   const { id, href, src, width } = params;
-
-//   const error = new Errors('image');
-
-//   if (id == '') {
-//     error.add('No id');
-//   }
-//   if (href == '') {
-//     error.add('No href');
-//   }
-//   if (src == '') {
-//     error.add('No src');
-//   }
-
-
-
-
-export default imageComponent;
