@@ -23,3 +23,10 @@ const italicComponent = (params) => {
   };
   
   export default italicComponent;
+
+
+//   const italicComponent = ({content}) => {
+//     return `<i>${content}</i>`;
+// }
+
+// export default italicComponent;
