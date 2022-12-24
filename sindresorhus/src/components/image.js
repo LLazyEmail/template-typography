@@ -50,7 +50,7 @@ const imageComponent = (params) => {
     style: `display: block;"`,
     border:"0",
     alt:"",
-    width: params.width,
+    width: params.width, // TODO test if it can work withot width param or not
   };
 
 
