@@ -34,15 +34,16 @@ const headingNMTG = (params) => {
 export default headingNMTG;
 
 
+
+const html = (children, attrOne, attrTwo) => {
+  `<span ${attrOne}>
+      <span ${attrTwo}>
+        ${children}
+      </span>
+    </span>`;
+  }
+
 const headingHN = (params) => {
-
-  // const attributes = {
-  //   target: `_self`,
-  //   href: params.href,
-  //   'data-link-id': params.id,
-  //   style: `text-decoration: none; color: #111111; text-transform: none; font-style: normal; text-decoration: none;`,
-  // };
-
 
   const { attributes, children } = params;
   const attributesStr = stringifyAttributes(attributes);
@@ -51,36 +52,22 @@ const headingHN = (params) => {
     style: styles.spanFont
   };
   const attrOne = stringifyAttributes(spanOne);
-
+  //-------
   const spanTwo = {
     style: styles.spanSize,
     "data-testid": "mainTitleChildrenTest"
   };
   const attrTwo = stringifyAttributes(spanTwo);
-
-
-  const html =  (children, attrOne, attrTwo) => {
-  `<span ${attrOne}>
-      <span ${spanTwo}>
-        ${children}
-      </span>
-    </span>`;
-  }
+  //-------
   
-  // return headingOneComponent({ content: params.text, attributesStr });
 
-  // `<h1 ${attributesStr}>
-  //   <span style={styles.spanFont}>
-  //     <span style={styles.spanSize} data-testid="mainTitleChildrenTest">
+  return headingOneComponent({ 
+    content: html(children, attrOne, attrTwo), 
+    attributesStr 
+  });
 
-  //       {children}
-
-
-  //     </span>
-  //   </span>
-  // </h1>`
 }
-
+//-----------------------------
 //   if (hrefTitle == '') {
 //     error.add('No hrefTitle');
 //   }
