@@ -42,7 +42,7 @@ const plugins = () => [
     // the fields to scan in a package.json to determine the entry point
     // if this list contains "browser", overrides specified in "pkg.browser"
     // will be used
-    mainFields: ["module", "main", "browser"] // Default: ['module', 'main']
+    // mainFields: ["module", "main", "browser"] // Default: ['module', 'main']
   }),
 
   // Allows verification of entry point and all imported files with ESLint.
@@ -77,7 +77,7 @@ const plugins = () => [
     // solve a problem with spread operator transpilation https://github.com/rollup/rollup/issues/281
     // plugins: ['babel-plugin-transform-object-rest-spread'],
     // removes comments from output
-    comments: false,
+    // comments: false,
     // babelHelpers: 'runtime'
   }),
 
@@ -99,14 +99,6 @@ const plugins = () => [
   globals(),
   builtins()
 
-  // remove flow annotations from output
-  // flow(),
-
-  // copy Flow definitions from source to destination directory
-  // copy({
-  //   files: ['src/*.flow'],
-  //   dest: 'dist',
-  // }),
 ];
 
 // example for adding plugin for env only
@@ -138,23 +130,22 @@ export default {
       file: pkg.module,
       // format of generated JS file, also: esm, and others are available
       format: "es",
-      // format: 'esm',
       // add sourcemaps
       sourcemap: true
     },
-    {
-      // output file location
-      file: pkg.browser,
-      // format of generated JS file, also: esm, and others are available
-      format: "iife",
-      // name visible for other scripts
-      name,
+    // {
+    //   // output file location
+    //   file: pkg.browser,
+    //   // format of generated JS file, also: esm, and others are available
+    //   format: "iife",
+    //   // name visible for other scripts
+    //   name,
 
-      // https://rollupjs.org/guide/en#output-globals-g-globals
-      globals: {
-        path: "path"
-      }
-    }
+    //   // https://rollupjs.org/guide/en#output-globals-g-globals
+    //   globals: {
+    //     path: "path"
+    //   }
+    // }
   ]
 
   // Specify here external modules which you don't want to include in your bundle (for instance: 'lodash', 'moment' etc.)
