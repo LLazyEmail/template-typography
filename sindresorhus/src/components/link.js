@@ -1,3 +1,4 @@
+import stringifyAttributes from 'stringify-attributes';
 // import customErrors from './Errors';
 // const customError = new customErrors('link');
 

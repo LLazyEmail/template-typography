@@ -3,7 +3,7 @@ import stringifyAttributes from 'stringify-attributes';
 import linkComponent from './link';
 
 import imageComponent from "./image";
-
+// TODO upgrade it
 const imageLink = (id, href, src, width) => {
 
 

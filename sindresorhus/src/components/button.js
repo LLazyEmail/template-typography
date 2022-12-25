@@ -8,7 +8,6 @@ import stringifyAttributes from 'stringify-attributes';
 //   multiple: ['a', 'b'],
 // });
 
-// import attributes from 'stringify-attributes';
 
 const buttonComponent = (params) => {
   const attributes = {
