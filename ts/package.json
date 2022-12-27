@@ -1,0 +1,21 @@
+{
+  "name": "html-typography-tags",
+  "version": "3.0.0",
+  "description": "https://www.devextent.com/import-es-modules-in-nodejs-with-typescript-and-babel/",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "tsc",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "np": "^7.6.3"
+  }
+}
