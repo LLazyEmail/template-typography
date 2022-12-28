@@ -4,6 +4,7 @@
   "description": "https://www.devextent.com/import-es-modules-in-nodejs-with-typescript-and-babel/",
   "main": "index.js",
   "types": "index.d.ts",
+  "type":"module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "tsc",
