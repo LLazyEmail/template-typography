@@ -2,6 +2,19 @@ import stringifyAttributes from 'stringify-attributes';
 // params: { src: string, width: string }
 function paragraphComponent (params: any) {
 
+  
+    const { attributes, content } = params;
+
+    const attributesStr = stringifyAttributes(attributes);
+ 
+
+    return `<p ${attributesStr}>${content}</p>`;
+  };
+  
+  export default paragraphComponent;
+
+
+  
     // if (typeof params != 'object') {
     //   customError.add('"params" is not "object"');
     // }
@@ -13,13 +26,3 @@ function paragraphComponent (params: any) {
     // if (typeof params.content == '') {
     //   customError.add('empty content');
     // }
-  
-    const { attributes, content } = params;
-
-    const attributesStr = stringifyAttributes(attributes);
- 
-
-    return `<p ${attributesStr}>${content}</p>`;
-  };
-  
-  export default paragraphComponent;

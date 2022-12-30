@@ -1,6 +1,9 @@
-import { linkComponent, imgWrapper } from '../src/components/image';
+// import { linkComponent, imgWrapper } from '../src/components/image';
 
-import buttonComponent from '../src/components/button2';
+// import buttonComponent from ;
+
+const buttonComponent = require('../src/components/button')
+
 
 const config = {id: '12', href: 'google.com'};
 
@@ -18,9 +21,9 @@ describe('testing image with a link', () => {
   test('rendering imgWrapper component', () => {
 
 
-    const imageLink = imgWrapper(data);
+    // const imageLink = imgWrapper(data);
 
-    console.log(imageLink);
+    // console.log(imageLink);
 
   });
 });

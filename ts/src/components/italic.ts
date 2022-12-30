@@ -4,6 +4,19 @@
 // params: { src: string, width: string }
 function italicComponent (params: any) {
 
+
+    const { content } = params;
+
+
+    return `<i>${content}</i>`;
+  };
+  
+  export default italicComponent;
+
+
+// export default italicComponent;
+
+
     // if (typeof params != 'object') {
     //   customError.add('"params" is not "object"');
     // }
@@ -16,17 +29,3 @@ function italicComponent (params: any) {
     //   customError.add('empty content');
     // }
   
-    const { content } = params;
-
-
-    return `<i>${content}</i>`;
-  };
-  
-  export default italicComponent;
-
-
-//   const italicComponent = ({content}) => {
-//     return `<i>${content}</i>`;
-// }
-
-// export default italicComponent;

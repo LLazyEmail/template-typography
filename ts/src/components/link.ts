@@ -6,6 +6,16 @@ import stringifyAttributes from 'stringify-attributes';
 // params: { src: string, width: string }
 function linkComponent (params: any) {
 
+
+
+  const { attributes, content } = params;
+  const attributesStr = stringifyAttributes(attributes);
+
+  return `<a ${attributesStr}>${content}</a>`;
+};
+
+export default linkComponent;
+
   // if (typeof params != 'object') {
   //   customError.add('"params" is not "object"');
   // }
@@ -17,11 +27,3 @@ function linkComponent (params: any) {
   // if (typeof params.content == '') {
   //   customError.add('empty content');
   // }
-
-  const { attributes, content } = params;
-  const attributesStr = stringifyAttributes(attributes);
-
-  return `<a ${attributesStr}>${content}</a>`;
-};
-
-export default linkComponent;
