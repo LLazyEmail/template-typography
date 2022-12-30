@@ -1,6 +1,7 @@
 import stringifyAttributes from 'stringify-attributes';
 
-const paragraphComponent = (params) => {
+function paragraphComponent (params: any) {
+
     // if (typeof params != 'object') {
     //   customError.add('"params" is not "object"');
     // }
