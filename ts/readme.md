@@ -10,7 +10,7 @@ https://www.codementor.io/@dhananjaykumar/build-and-publish-an-npm-typescript-pa
 https://medium.com/nerd-for-tech/testing-typescript-with-jest-290eaee9479d
 
 
-
+---
 
 button.js
 
