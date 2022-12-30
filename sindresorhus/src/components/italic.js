@@ -1,7 +1,9 @@
 // import stringifyAttributes from 'stringify-attributes';
 
 // TODO think about renaming content into children
-const italicComponent = (params) => {
+
+function italicComponent (params: any) {
+
     // if (typeof params != 'object') {
     //   customError.add('"params" is not "object"');
     // }
