@@ -1,7 +1,8 @@
 import stringifyAttributes from 'stringify-attributes';
 
 // TODO think about renaming content into children
-const divComponent = (params) => {
+function divComponent (params: any) {
+
     // if (typeof params != 'object') {
     //   customError.add('"params" is not "object"');
     // }
