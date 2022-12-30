@@ -10,7 +10,8 @@
     "build": "npx tsc",
     "build:babel": "babel src -d dist",
     "test": "jest",
-    "lint": "tslint \"src/**/*.ts\""
+    "lint": "tslint \"src/**/*.ts\"",
+    "clean": "shx rm -rf ./coverage && shx rm -rf ./dist"
   },
   "keywords": [],
   "author": "",
