@@ -26,21 +26,21 @@ const buttonMainBlock = (id, href, text) => {
   </a>`;
 };
 
-const buttonComponent = (params) => {
-  const { id, href, text } = params;
-  const error = new Errors('contentButton');
+// const buttonComponent = (params) => {
+//   const { id, href, text } = params;
+//   const error = new Errors('contentButton');
 
-  if (id == '') {
-    error.add('No id button');
-  }
-  if (href == '') {
-    error.add('No href button');
-  }
-  if (text == '') {
-    error.add('No text button');
-  }
+//   if (id == '') {
+//     error.add('No id button');
+//   }
+//   if (href == '') {
+//     error.add('No href button');
+//   }
+//   if (text == '') {
+//     error.add('No text button');
+//   }
 
-  return buttonMainBlock(id, href, text);
-};
+//   return buttonMainBlock(id, href, text);
+// };
 
 export default buttonComponent;
