@@ -1,6 +1,8 @@
 // Create strong component
 // TODO should we replace content with child as we might have other components inside?
-const strongComponent = (params) => {
+
+function strongComponent (params: any) {
+
 
     const { attributes, content } = params;
     const attributesStr = stringifyAttributes(attributes);
