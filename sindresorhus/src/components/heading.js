@@ -1,13 +1,15 @@
 import stringifyAttributes from 'stringify-attributes';
 
-const headingComponent = (params) => {
+function headingComponent (params: any) {
+
     const { attributes, children } = params;
     const attributesStr = stringifyAttributes(attributes);
 
     return `<h3 ${attributesStr}>${children}</h3>`;
 }
 
-const headingOneComponent = (params) => {
+function headingOneComponent (params: any) {
+
     const { attributes, children } = params;
     const attributesStr = stringifyAttributes(attributes);
 
