@@ -54,7 +54,7 @@ https://github.com/LLazyEmail/nomoretogo_email_template/blob/main/sub-modules/ty
 
 ================
 
-
+```
 
 const paragraphComponent = (params) => {
   if (typeof params != 'object') {
@@ -73,8 +73,9 @@ const paragraphComponent = (params) => {
 
   return `<p ${attributes}>${content}</p>`;
 };
+```
 
-
+```
 const buttonComponent = (params) => {
   const { id, href, text } = params;
   const error = new Errors('contentButton');
@@ -91,10 +92,11 @@ const buttonComponent = (params) => {
 
   return buttonMainBlock(id, href, text);
 };
-
+```
 
 
 heading
+```
 export default function (params) {
   const { hrefTitle, idTitle, textTitle } = params;
   const error = new Errors('contentTitleText');
@@ -111,5 +113,5 @@ export default function (params) {
 
   return headingMainBlock(hrefTitle, idTitle, textTitle);
 }
-
+```
 
