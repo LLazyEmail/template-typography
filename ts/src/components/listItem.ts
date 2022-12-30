@@ -1,5 +1,5 @@
 import stringifyAttributes from 'stringify-attributes';
-
+// params: { src: string, width: string }
 function listItemComponent (params: any) {
 
 

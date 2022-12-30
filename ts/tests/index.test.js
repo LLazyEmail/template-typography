@@ -1,6 +1,6 @@
 import { linkComponent, imgWrapper } from '../src/components/image';
 
-import buttonComponent2 from '../src/components/button2';
+import buttonComponent from '../src/components/button2';
 
 const config = {id: '12', href: 'google.com'};
 
@@ -31,7 +31,7 @@ describe('testing image with a link', () => {
 describe('testing complex links', () => {
   test('rendering Button2 component', () => {
     // console.log(buttonComponent2);
-    console.log(buttonComponent2(config))
+    console.log(buttonComponent(config))
     //buttonComponent2({id: '12', href: 'google.com'});
     //         const string1 = printHead();
     //   //       // console.log(string);

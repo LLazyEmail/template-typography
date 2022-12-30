@@ -1,7 +1,7 @@
 // import stringifyAttributes from 'stringify-attributes';
 
 // TODO think about renaming content into children
-
+// params: { src: string, width: string }
 function italicComponent (params: any) {
 
     // if (typeof params != 'object') {
@@ -16,10 +16,8 @@ function italicComponent (params: any) {
     //   customError.add('empty content');
     // }
   
-    const { attributes, content } = params;
+    const { content } = params;
 
-    // const attributesStr = stringifyAttributes(attributes);
- 
 
     return `<i>${content}</i>`;
   };

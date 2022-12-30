@@ -4,7 +4,7 @@ import linkComponent from './link';
 
 import imageComponent from "./image";
 // TODO upgrade it
-
+// params: { src: string, width: string }
 function imageLink (id: number, href: string, src: string, width: string) {
 
     const image_attributes = {

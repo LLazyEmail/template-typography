@@ -13,8 +13,8 @@ import stringifyAttributes from 'stringify-attributes';
 // }
 
 
-function buttonComponent (params: any) {
-  const attributes = {
+function buttonComponent(params: { id: string, href: string, text: string }) {
+   var attributes = {
     id: params.id,
     class: `mlContentButton`,
     href: params.href,
@@ -22,11 +22,18 @@ function buttonComponent (params: any) {
     style: `font-family: "Poppins", sans-serif; background-color: #d6685e; border-radius: 3px; color: #ffffff; display: inline-block; font-size: 17px; font-weight: 400; line-height: 23px; padding: 15px 0 15px 0; text-align: center; text-decoration: none; width: 260px;`,
   };
 
-  const attributesStr = stringifyAttributes(attributes);
+  var attributesStr = stringifyAttributes(attributes);
 
-  // console.log(attributesStr);
+  console.log(attributesStr);
 
-  return linkComponent({ content: params.text, attributesStr });
+  var linkObject = {
+    attributes: attributesStr,
+    content: params.text
+  }
+
+  console.log(linkObject);
+
+  return linkComponent(linkObject);
 };
 
 // // we will probably loose id param during changes that Arthur is doing.

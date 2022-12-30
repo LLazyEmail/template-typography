@@ -3,7 +3,7 @@ import stringifyAttributes from 'stringify-attributes';
 // const customError = new customErrors('link');
 
 // import ow from 'ow';
-
+// params: { src: string, width: string }
 function linkComponent (params: any) {
 
   // if (typeof params != 'object') {
