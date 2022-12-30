@@ -4,7 +4,8 @@ import stringifyAttributes from 'stringify-attributes';
 
 // import ow from 'ow';
 
-const linkComponent = (params) => {
+function linkComponent (params: any) {
+
   // if (typeof params != 'object') {
   //   customError.add('"params" is not "object"');
   // }
