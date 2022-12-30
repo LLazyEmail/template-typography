@@ -9,7 +9,8 @@
 
 import stringifyAttributes from 'stringify-attributes';
 
-const imageComponent = (params) => {
+function imageComponent (params: any) {
+
 
   const attributes = {
     src: params.src,
