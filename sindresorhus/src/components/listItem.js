@@ -1,7 +1,7 @@
 import stringifyAttributes from 'stringify-attributes';
 
+function listItemComponent (params: any) {
 
-const listItemComponent = (params) => {
 
     const { attributes, children } = params;
     const attributesStr = stringifyAttributes(attributes);
