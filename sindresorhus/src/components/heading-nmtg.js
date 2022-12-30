@@ -14,8 +14,8 @@ import headingOneComponent from './headingOne';
 //   target="_self">${textTitle}</a>`;
 // };
 
+function headingNMTG (params: any) {
 
-const headingNMTG = (params) => {
   const attributes = {
     target: `_self`,
     href: params.href,
@@ -33,17 +33,15 @@ const headingNMTG = (params) => {
 
 export default headingNMTG;
 
+function html (children: string, attrOne: string, attrTwo: string) {
 
-
-const html = (children, attrOne, attrTwo) => {
   `<span ${attrOne}>
       <span ${attrTwo}>
         ${children}
       </span>
     </span>`;
   }
-
-const headingHN = (params) => {
+function headingHN (params: any) {
 
   const { attributes, children } = params;
   const attributesStr = stringifyAttributes(attributes);
