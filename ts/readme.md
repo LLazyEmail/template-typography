@@ -51,3 +51,65 @@ https://github.com/LLazyEmail/nomoretogo_email_template/blob/main/sub-modules/ty
 
 
 https://github.com/LLazyEmail/nomoretogo_email_template/blob/main/sub-modules/typography/package.json
+
+================
+
+
+
+const paragraphComponent = (params) => {
+  if (typeof params != 'object') {
+    customError.add('"params" is not "object"');
+  }
+
+  if (typeof params.attributes == '') {
+    customError.add('empty attributes');
+  }
+
+  if (typeof params.content == '') {
+    customError.add('empty content');
+  }
+
+  const { attributes, content } = params;
+
+  return `<p ${attributes}>${content}</p>`;
+};
+
+
+const buttonComponent = (params) => {
+  const { id, href, text } = params;
+  const error = new Errors('contentButton');
+
+  if (id == '') {
+    error.add('No id button');
+  }
+  if (href == '') {
+    error.add('No href button');
+  }
+  if (text == '') {
+    error.add('No text button');
+  }
+
+  return buttonMainBlock(id, href, text);
+};
+
+
+
+heading
+export default function (params) {
+  const { hrefTitle, idTitle, textTitle } = params;
+  const error = new Errors('contentTitleText');
+
+  if (hrefTitle == '') {
+    error.add('No hrefTitle');
+  }
+  if (idTitle == '') {
+    error.add('No idTitle');
+  }
+  if (textTitle == '') {
+    error.add('No textTitle');
+  }
+
+  return headingMainBlock(hrefTitle, idTitle, textTitle);
+}
+
+
