@@ -33,15 +33,20 @@ console.log(buttonComponent(config))
 export {
     buttonComponent, 
     divComponent, 
+    //-----
     heading, 
     headingComponent, 
     headingOneComponent, 
+    //-----
     imageComponent,  
     imageLink,  
+    //-----
     italicComponent,  
     linkComponent,  
+    //-----
     listComponent,  
     listItemComponent,  
+    //-----
     paragraphComponent,  
     strongComponent, 
 }
@@ -49,16 +54,14 @@ export {
 
 // export { 
 //     // buttonComponent, 
-//     buttonComponent,
-//     heading,  
+
 //     //-----
-//     // strong, 
+
 //     // renderSubHeading,
 //     // spanHeadingBlock,
 //     //------
-//     // imageComponent,
+
 //     // imgWrapper,
-//     // paragraphComponent,
-//     linkComponent,
+
 //     // separatorComponent
 // };
