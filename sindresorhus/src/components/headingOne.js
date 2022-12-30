@@ -1,6 +1,7 @@
 import stringifyAttributes from 'stringify-attributes';
 
-const headingOneComponent = (params) => {
+function headingOneComponent (params: any) {
+
     const { attributes, children } = params;
     const attributesStr = stringifyAttributes(attributes);
 
