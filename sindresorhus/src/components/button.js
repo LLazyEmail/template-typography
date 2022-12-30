@@ -8,8 +8,12 @@ import stringifyAttributes from 'stringify-attributes';
 //   multiple: ['a', 'b'],
 // });
 
+// function printToConsole(s: string) {
+//   console.log(s);
+// }
 
-const buttonComponent = (params) => {
+
+function buttonComponent (params: any) {
   const attributes = {
     id: params.id,
     class: `mlContentButton`,
