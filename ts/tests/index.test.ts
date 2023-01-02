@@ -5,7 +5,7 @@ import buttonComponent from '../src/components/button';
 // import strongComponent from '../src/components/strong';
 
 import strongComponent from '../src/components/strong';
-
+//jest.mock('../src/components/strong') ;
 // const buttonComponent = require('../src/components/button')
 
 const attributes = {

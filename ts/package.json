@@ -4,7 +4,7 @@
   "description": "https://www.devextent.com/import-es-modules-in-nodejs-with-typescript-and-babel/",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "type": "module",
+  "type":"module",
   "scripts": {
     "prepublish": "tsc",
     "build": "npx tsc",
