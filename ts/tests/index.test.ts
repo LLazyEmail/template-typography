@@ -1,11 +1,11 @@
 // import { linkComponent, imgWrapper } from '../src/components/image';
 
-// import buttonComponent from ;
+import buttonComponent from '../src/components/button';
 
-const buttonComponent = require('../src/components/button')
+// const buttonComponent = require('../src/components/button')
 
 
-const config = {id: '12', href: 'google.com'};
+const config = {id: '12', href: 'google.com', text: 'Bla bla bla'};
 
 const data = {
   id: 'imageBlock-26',

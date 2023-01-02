@@ -5,6 +5,7 @@ const config: Config.InitialOptions = {
   transform: {
   "^.+\\.tsx?$": "ts-jest",
   },
+  transformIgnorePatterns: ['<rootDir>/node_modules/']  
 };
 export default config;
 
@@ -26,6 +27,7 @@ export default config;
 /** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 // module.exports = {
 //   preset: "ts-jest",
+
 //   testEnvironment: "node",
 //   roots: ["<rootDir>/src"],
 //   // the following line is needed in order to grab modules from the
