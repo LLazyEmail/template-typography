@@ -2,8 +2,17 @@
 
 import buttonComponent from '../src/components/button';
 
+// import strongComponent from '../src/components/strong';
+
+import strongComponent from '../src/components/strong';
+
 // const buttonComponent = require('../src/components/button')
 
+const attributes = {
+  style: "width: 600px"
+}
+
+const content = "Bla bla bla";
 
 const config = {id: '12', href: 'google.com', text: 'Bla bla bla'};
 
@@ -33,8 +42,15 @@ describe('testing image with a link', () => {
 
 describe('testing complex links', () => {
   test('rendering Button2 component', () => {
+
+
     // console.log(buttonComponent2);
-    console.log(buttonComponent(config))
+    // console.log(buttonComponent(config))
+
+
+    console.log( strongComponent({ attributes, content }) );
+
+    // console.log( linkComponent({id: '12', href: 'google.com'}) );
     //buttonComponent2({id: '12', href: 'google.com'});
     //         const string1 = printHead();
     //   //       // console.log(string);
