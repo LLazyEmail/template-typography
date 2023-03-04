@@ -1,5 +1,5 @@
 {
-  "name": "@template/html-typography-tags",
+  "name": "html-typography-tags",
   "version": "4.2.2",
   "type": "commonjs",
   "dependencies": {
