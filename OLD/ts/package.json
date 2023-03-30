@@ -17,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "stringify-attributes": "^3.0.0",
+    "stringify-attributes": "^4.0.0",
     "typescript": "^4.9.4"
   },
   "devDependencies": {

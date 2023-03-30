@@ -3,7 +3,7 @@
   "version": "4.2.2",
   "type": "commonjs",
   "dependencies": {
-    "stringify-attributes": "^3.0.0"
+    "stringify-attributes": "^4.0.0"
   },
   "author": "Arthur Tkachenko, Yuriy",
   "license": "MIT",
